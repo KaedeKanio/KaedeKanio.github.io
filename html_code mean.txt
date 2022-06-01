@@ -2,12 +2,10 @@
 <example>       開始標籤
 </example>     結束標籤
 
-
 !DOCTYPE
 檔案類型
   - ex:<!DOCTYPE html>
            告訴電腦這是html檔案
-
 
 html
 標籤最外層

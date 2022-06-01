@@ -1,0 +1,70 @@
+<>                        標籤
+<example>       開始標籤
+</example>     結束標籤
+
+
+!DOCTYPE
+檔案類型
+  - ex:<!DOCTYPE html>
+           告訴電腦這是html檔案
+
+
+html
+標籤最外層
+    head
+    網頁資訊
+            meta
+            跟瀏覽器說用"編碼"來寫程式
+                      charset
+                      字元編碼
+              - ex:<meta charset="UTF-8">
+                       用UTF-8來編碼
+            title
+            網頁標題
+    body
+    網頁內容
+            <!-- note -->    (註解，非程式碼)
+            <h>   -- only 1~6 --
+             文章標題
+            <p>
+             文章內容	
+                    <b>
+                     粗體字
+                    <i>
+                     斜體字
+            <br>
+             換行 
+            <hr>
+             水平線
+                    <br/>,<hr/>,<meta charset="UTF-8"/>
+                     開始與結束中間無內容可將 <br></br> 省略為 <br/>
+            <a>
+              連結
+                     <a href="https://google.com">Google網站</a>                       
+                             -- <x 屬性="xxxxx"></x> --
+
+              <img src="-- abc.jpg or https://photo --" width="info num" height="info num"/>
+                       -- if only give a height or width info, it will auto turn the size --
+
+              <video src="-- abc.mp4 --">影片無法載入</video>
+                -- youtube嵌入影片 用youtube的分享。--
+
+               <ul>
+                 點
+               <ol type="?">  ? = ( A = ABC... ) , ( a = abc... ) , ( I = I II III IV ) , ( i = i ii iii iv )
+                 字
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+
+                <table>   width=""
+                        <tr>
+                         行
+                             <td>
+                              行內容
+                <div>       換行
+                <span>   同行
+                                 在css技術很有用，在美化跟排版的時候很方便  -- (括號反白一次改的概念) --
+                
+                <input type="?">  ? = text , password , date , rnage , file , checkbox , ...
+                <textarea></textarea>

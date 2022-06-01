@@ -1,3 +1,7 @@
+h2 {
+    display: inline;
+}
+
 h2:hover, th:hover, td:hover {
     background-color : coral;
     width: fit-content;

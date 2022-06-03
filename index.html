@@ -7,11 +7,12 @@
         <meta name="keywords" content="貓貓, 作品, 分享"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>網站</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" href="affect.css" />
     </head>
+
     <body>
-        <script src="script.js"></script>
-        <div style="text-align: center;">
+        <div style="text-align: center; width: 100%; padding-bottom: 100%;">
             <h1>首頁</h1>
             <hr/>
             <!-- 直接放圖片 -->
@@ -29,5 +30,70 @@
             <a href="video.html">影片</a>
             <a href="list.html">列表</a>
         </div>
+
+
+                    <div style="position: fixed; bottom: -2px;">
+                        <div class="navigation">
+                            <ul>
+                                <li class="list">
+                                    <a href="list.html">
+                                        <span class="icon">
+                                            <ion-icon name="book-outline"></ion-icon>
+                                        </span>
+                                        <span class="text">文章</span>
+                                    </a>
+                                </li>
+                                <li class="list">
+                                    <a href="Img.html">
+                                        <span class="icon">
+                                            <ion-icon name="images-outline"></ion-icon>
+                                        </span>
+                                        <span class="text">圖片</span>
+                                    </a>
+                                </li>
+                                <li class="list animetion">
+                                    <a href="index.html">
+                                        <span class="icon">
+                                            <ion-icon name="home-outline"></ion-icon>
+                                        </span>
+                                        <span class="text">首頁</span>
+                                    </a>
+                                </li>
+                                <li class="list">
+                                    <a href="video.html">
+                                        <span class="icon">
+                                            <ion-icon name="film-outline"></ion-icon>
+                                        </span>
+                                        <span class="text">影片</span>
+                                    </a>
+                                </li>
+                                <li class="list">
+                                    <a href="index.html">
+                                        <span class="icon">
+                                            <ion-icon name="settings-outline"></ion-icon>
+                                        </span>
+                                        <span class="text">設定</span>
+                                    </a>
+                                </li>
+                                <div class="indicator"></div>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <script>
+                        const list = document.querySelectorAll('.list');
+                        function activeLink(){
+                            list.forEach((item) =>
+                            item.classList.remove('animetion'));
+                            this.classList.add('animetion');
+                        }
+                    list.forEach((item) =>
+                    item.addEventListener('mouseover',activeLink));
+                    </script>
+
+                    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+                    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
     </body>
 </html>

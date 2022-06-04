@@ -1,4 +1,4 @@
-@import url('https://fonts.google.com/?subset=chinese-traditional');
+@import url('');
 *
 {
     margin: 0;
@@ -34,7 +34,7 @@ body
     align-items: center;
     width: 420px;
     height: 70px;
-    background: #d87a00;
+    background: teal;
     display: flex;
     border-radius: 20px 20px 0 0;
 }
@@ -105,7 +105,7 @@ body
     top: -50%;
     width: 70px;
     height: 70px;
-    background: orange;
+    background: skyblue;
     border-radius: 50%;
     border: 6px solid var(--clr);
     transition: 0.5s;
@@ -120,7 +120,7 @@ body
     left: -22.2px;
     width: 20px;
     height: 20px;
-    background: #d87a00;
+    background: teal;
     border-top-right-radius: 20px;
     box-shadow: 1px -10px 0 0 var(--clr);
 }
@@ -133,7 +133,7 @@ body
     right: -22.2px;
     width: 20px;
     height: 20px;
-    background: #d87a00;
+    background: teal;
     border-top-left-radius: 20px;
     box-shadow: -1px -10px 0 0 var(--clr);
 }

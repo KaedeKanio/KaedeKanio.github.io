@@ -1,0 +1,35 @@
+.title{
+    display: block;
+    position: absolute;
+    top: 30px;
+    border: solid 1px red;
+    transition: 0.2s;
+}
+.title:hover{
+    color: teal;
+    transition: 0.3s;
+}
+
+
+.webcon div{
+    display: block;
+    background-color: red;
+    height: fit-content;
+    width: fit-content;
+    border: 1px solid black;
+    transition: 0.2s;
+}
+.webcon div:hover{
+    opacity: 50%;
+    transition: 0.3s;
+}
+
+/*Flex Box*/
+.webcon{
+    border: solid 1px blue;
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 100%;
+    justify-content: space-evenly;
+}

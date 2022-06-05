@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>首頁</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width"/>
+        <meta name="viewport" content="initial-scale=1.0"/>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <link href="desing.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="title">
+            <h1>首頁</h1>
+        </div>
+        <hr/>
+        <div class="webcon">
+            <div class="box1">
+                <h2>內容1</h2>
+                <p>
+                    AAAAAAAAAAAAAAAAAA
+                    AAAAAAAAAAAAAAAAAA
+                    AAAAAAAAAAAAAAAAAA
+                    AAAAAAAAAAAAAAAAAA
+                    AAAAAAAAAAAAAAAAAA
+                    AAAAAAAAAAAAAAAAAA
+                    AAAAAAAAAAAAAAAAAA
+                </p>
+            </div>
+            <div class="box4">
+                <h2>內容1</h2>
+                <p>
+                    AAAAAAAAAAAAAAAAAA
+                    AAAAAAAAAAAAAAAAAA
+                    AAAAAAAAAAAAAAAAAA
+                    AAAAAAAAAAAAAAAAAA
+                    AAAAAAAAAAAAAAAAAA
+                    AAAAAAAAAAAAAAAAAA
+                    AAAAAAAAAAAAAAAAAA
+                </p>
+            </div>
+            <div class="box5">
+                <h2>內容1</h2>
+                <p>
+                    AAAAAAAAAAAAAAAAAA
+                    AAAAAAAAAAAAAAAAAA
+                    AAAAAAAAAAAAAAAAAA
+                    AAAAAAAAAAAAAAAAAA
+                    AAAAAAAAAAAAAAAAAA
+                    AAAAAAAAAAAAAAAAAA
+                    AAAAAAAAAAAAAAAAAA
+                </p>
+            </div>
+            <div class="box2">
+                <h2>內容2</h2>
+                <p>
+                    BBBBBBBBBBBBBBBBBB
+                    BBBBBBBBBBBBBBBBBB
+                    BBBBBBBBBBBBBBBBBB
+                    BBBBBBBBBBBBBBBBBB
+                    BBBBBBBBBBBBBBBBBB
+                    BBBBBBBBBBBBBBBBBB
+                    BBBBBBBBBBBBBBBBBB
+                </p>
+            </div>
+            <div class="box3">
+                <h2>內容3</h2>
+                <p>
+                    CCCCCCCCCCCCCCCCCC
+                    CCCCCCCCCCCCCCCCCC
+                    CCCCCCCCCCCCCCCCCC
+                    CCCCCCCCCCCCCCCCCC
+                    CCCCCCCCCCCCCCCCCC
+                    CCCCCCCCCCCCCCCCCC
+                    CCCCCCCCCCCCCCCCCC
+                </p>
+            </div>
+        </div>
+    <!-- 導引列表介面 -->
+        <div style="position: fixed; bottom: -2px;">
+            <div class="navigation">
+                <ul>
+                    <li class="list">
+                        <a href="#">
+                            <span class="icon">
+                            <ion-icon name="book-outline"></ion-icon>
+                            </span>
+                            <span class="text">文章</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#">
+                            <span class="icon">
+                            <ion-icon name="images-outline"></ion-icon>
+                            </span>
+                            <span class="text">圖片</span>
+                        </a>
+                    </li>
+                    <li class="list animetion">
+                        <a href="#">
+                            <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                            </span>
+                            <span class="text">首頁</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#">
+                            <span class="icon">
+                            <ion-icon name="film-outline"></ion-icon>
+                            </span>
+                            <span class="text">影片</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#">
+                            <span class="icon">
+                            <ion-icon name="settings-outline"></ion-icon>
+                            </span>
+                            <span class="text">設定</span>
+                        </a>
+                    </li>
+                <!-- 選定球 -->
+                    <div class="indicator"></div>
+                  </ul>
+            </div>
+        </div>
+    <!-- js 滑鼠event -->
+        <script>
+            const list = document.querySelectorAll('.list');
+            function activeLink(){
+                  list.forEach((item) =>
+                  item.classList.remove('animetion'));
+                  this.classList.add('animetion');
+            }
+        list.forEach((item) =>
+        item.addEventListener('mouseover',activeLink));
+        </script>
+    <!-- icon 導入 -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>

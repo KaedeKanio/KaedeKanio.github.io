@@ -1,8 +1,15 @@
+
+
+:root{
+    --cl: coral;
+    --p5: 0.5s;
+}
+
 .title{
     display: block;
     position: absolute;
-    top: 30px;
-    border: solid 1px red;
+    top: 50px;
+    border: solid 1px var(--cl);
     transition: 0.2s;
 }
 .title:hover{
@@ -10,18 +17,18 @@
     transition: 0.3s;
 }
 
-
 .webcon div{
     display: block;
-    background-color: red;
+    padding: 10px;
+    background-color: var(--cl);
     height: fit-content;
-    width: fit-content;
+    width: 300px;
     border: 1px solid black;
-    transition: 0.2s;
+    transition: 0.5s;
 }
 .webcon div:hover{
-    opacity: 50%;
-    transition: 0.3s;
+    opacity: 75%;
+    transition: 0.5s;
 }
 
 /*Flex Box*/
@@ -29,7 +36,69 @@
     border: solid 1px blue;
     display: flex;
     flex-wrap: wrap;
-    height: 300px;
+    height: fit-content;
     width: 100%;
     justify-content: space-evenly;
+    transition: 0.5s;
+}
+
+.lhalf{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background: black;
+    height: 94%;
+    width: 39%;
+    transform:scaleY(0.3);
+    opacity: 0%;
+    transition: 0.5s;
+    transform-origin: bottom;
+}
+.lhalf:hover{
+    transform: scaleY(1);
+    opacity: 80%;
+    transition: 1s;
+}
+
+.rhalf{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background: black;
+    height: 94%;
+    width: 50%;
+    transform:scaleX(0.2);
+    opacity: 0%;
+    transition: 0.5s;
+    transform-origin: right;
+}
+.rhalf:hover{
+    transform: scaleX(0.78);
+    opacity: 80%;
+    transition: 1s;
+}
+
+.thalf{
+    position: absolute;
+    top: 0px;
+    background: black;
+    height: 280px;
+    width: 100%;
+    transform:scaley(0.2);
+    opacity: 80%;
+    transition: var(--p5);
+    transform-origin: top;
+}
+.thalf:hover{
+    transform: scaleY(0.8);
+    opacity: 100%;
+    transition: 1s;
+}
+
+.thalf div span{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.5em;
+    color: white;
 }

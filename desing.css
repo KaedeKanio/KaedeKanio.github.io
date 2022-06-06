@@ -121,7 +121,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    min-height: 520px;
+    min-height: 550px;
     justify-content: space-between;
 }
 
@@ -145,6 +145,10 @@ body{
 .tab .list .content .page a .inpage .img{
     align-self: flex-end;
     margin: 0 auto;
+}
+
+.tab .list .content .page a .inpage .img img{
+    width: 300px;
 }
 
 

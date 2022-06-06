@@ -3,8 +3,6 @@ body{
     justify-content: center;
 }
 
-
-
 .title-bar .bar{
     display: flex;
     background-color: black;
@@ -20,7 +18,6 @@ body{
     transition: 0.5s;
     transition-delay: 0.2s;
 }
-
 
 .title-bar .bar .bar-dwn span{
     display: block;
@@ -40,7 +37,6 @@ body{
     font-size: 1.5em;
 }
 
-
 .title-bar .title h1{
     display: inline;
     margin: 0px;
@@ -51,7 +47,6 @@ body{
     transition: 0.5s;
 }
 
-
 .槓槓 span{
     display: block;
     position: relative;
@@ -60,8 +55,6 @@ body{
     height: 2px;
     background: teal;
 }
-
-
 
 .tab{
     display: block;
@@ -91,7 +84,6 @@ body{
     display: block;
 }
 
-
 .tab .list .content{
     display: flex;
     flex-wrap: wrap;
@@ -116,7 +108,6 @@ body{
     color:teal;
 }
 
-
 .tab .list .content .page a .inpage{
     display: flex;
     flex-wrap: wrap;
@@ -124,7 +115,6 @@ body{
     min-height: 550px;
     justify-content: space-between;
 }
-
 
 .tab .list .content .page a .inpage .text{
     width: 300px;
@@ -140,9 +130,6 @@ body{
     margin: 0 20px;
 }
 
-
-
-
 .tab .list .content .page a .inpage .img{
     align-self: flex-end;
     margin: 0 auto;
@@ -152,19 +139,15 @@ body{
     width: 300px;
 }
 
-
 .tab .list .content .page a .inpage .texttitle{
     font-size: 1.75em;
     font-weight: bold;
     margin-bottom: 15px;
 }
 
-
-
 .tab .list .content .page:nth-child(3n){
     margin-right: 0;
 }
-
 
 a{
     color: inherit;

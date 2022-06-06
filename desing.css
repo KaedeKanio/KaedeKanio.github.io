@@ -131,11 +131,12 @@ body{
 }
 
 .tab .list .content .page a .inpage .text .textdate{
+    font-size: 15px;
     margin-bottom: 25px;
 }
 
 .tab .list .content .page a .inpage .text .textdate .label{
-    font-size: 15px;
+    font-size: 12px;
     margin: 0 20px;
 }
 

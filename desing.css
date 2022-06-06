@@ -1,104 +1,120 @@
-
-
-:root{
-    --cl: coral;
-    --p5: 0.5s;
+body{
+    margin: 0px;
+    justify-content: center;
 }
 
-.title{
-    display: block;
-    position: absolute;
-    top: 50px;
-    border: solid 1px var(--cl);
-    transition: 0.2s;
-}
-.title:hover{
-    color: teal;
-    transition: 0.3s;
-}
 
-.webcon div{
-    display: block;
-    padding: 10px;
-    background-color: var(--cl);
-    height: fit-content;
-    width: 300px;
-    border: 1px solid black;
-    transition: 0.5s;
-}
-.webcon div:hover{
-    opacity: 75%;
-    transition: 0.5s;
-}
 
-/*Flex Box*/
-.webcon{
-    border: solid 1px blue;
+.title-bar .bar{
     display: flex;
-    flex-wrap: wrap;
-    height: fit-content;
+    background-color: black;
     width: 100%;
-    justify-content: space-evenly;
+    height: 75px;
+    opacity: 70%;
     transition: 0.5s;
 }
-
-.lhalf{
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    background: black;
-    height: 94%;
-    width: 39%;
-    transform:scaleY(0.3);
-    opacity: 0%;
-    transition: 0.5s;
-    transform-origin: bottom;
-}
-.lhalf:hover{
-    transform: scaleY(1);
-    opacity: 80%;
-    transition: 1s;
-}
-
-.rhalf{
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-    background: black;
-    height: 94%;
-    width: 50%;
-    transform:scaleX(0.2);
-    opacity: 0%;
-    transition: 0.5s;
-    transform-origin: right;
-}
-.rhalf:hover{
-    transform: scaleX(0.78);
-    opacity: 80%;
-    transition: 1s;
-}
-
-.thalf{
-    position: absolute;
-    top: 0px;
-    background: black;
-    height: 280px;
+.title-bar .bar:hover{
     width: 100%;
-    transform:scaley(0.2);
-    opacity: 80%;
-    transition: var(--p5);
-    transform-origin: top;
-}
-.thalf:hover{
-    transform: scaleY(0.8);
-    opacity: 100%;
-    transition: 1s;
+    height: 150px;
+    opacity: 85%;
+    transition: 0.5s;
+    transition-delay: 0.2s;
 }
 
-.thalf div span{
+
+.title-bar .bar .bar-dwn span{
+    display: block;
     position: relative;
+    left: 40px;
+    top: 17px;
+    margin: 7px 25px 7px 0px;
+    width: 100%;
+    height: 2px;
+    background: white;
+}
+
+.title-bar .title{
     display: flex;
-    justify-content: space-evenly;
+    margin:20px;
+    justify-content: center;
     font-size: 1.5em;
-    color: white;
+}
+
+
+.title-bar .title h1{
+    display: inline;
+    margin: 0px;
+    transition: 0.5s;
+}
+.title-bar .title h1:hover{
+    color: teal;
+    transition: 0.5s;
+}
+
+
+.槓槓 span{
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    height: 2px;
+    background: teal;
+}
+
+
+
+.tab{
+    display: block;
+    width: 1250px;
+    margin: 0 auto; 
+    padding: 0;
+}
+
+.tab .pagetitle{
+    display: flex;
+    justify-content: center;
+}
+
+.tab .pagetitle h2{
+    display: inline;
+    margin:30px auto;
+    transition: 0.5s;
+}
+.tab .pagetitle h2:hover{
+    color: teal;
+    transition: 0.5s;
+}
+
+
+.tab .content{
+    display: flex;
+    height: 500px;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.tab .content .page{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin:20px;
+    margin-right: 50px;
+    flex: 1;
+    transition: 0.5s;
+}
+
+.tab .content .page .img{
+    width: auto;
+    margin: 0 auto;
+    align-self: flex-end;
+}
+
+.tab .content .page:hover{
+    opacity: 90%;
+    transition: 0.5s;
+    color:teal;
+}
+
+.tab .content .page h2{
+    font-size: 1.75em;
 }

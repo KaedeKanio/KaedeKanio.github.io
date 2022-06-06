@@ -73,50 +73,100 @@ body{
 .tab .pagetitle{
     display: flex;
     justify-content: center;
+    margin: 10px auto;
+    color: teal;
 }
 
-.tab .pagetitle h2{
+.tab .pagetitle .texttitle{
     display: inline;
     margin:30px auto;
     transition: 0.5s;
 }
-.tab .pagetitle h2:hover{
+.tab .pagetitle .texttitle:hover{
     color: teal;
     transition: 0.5s;
 }
 
-
-.tab .content{
-    display: flex;
-    height: 500px;
-    margin: 0 auto;
-    width: 1100px;
-    justify-content: space-between;
+.tab .list{
+    display: block;
 }
 
-.tab .content .page{
+
+.tab .list .content{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.tab .list .content .page{
     display: flex;
     flex-direction: column;
+    min-height: 520px;
     justify-content: space-between;
     transition: 0.5s;
     width: 300px;
+    margin-bottom: 150px;
+    margin-right: 8%;
 }
 
-.tab .content .page .text{
-    width: 300px;
-}
-
-.tab .content .page .img{
-    align-self: flex-end;
-    margin: 0 auto;
-}
-
-.tab .content .page:hover{
+.tab .list .content .page:hover{
     opacity: 80%;
     transition: 0.5s;
     color:teal;
 }
 
-.tab .content .page h2{
+
+.tab .list .content .page a .inpage{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    min-height: 520px;
+    justify-content: space-between;
+}
+
+
+.tab .list .content .page a .inpage .text{
+    width: 300px;
+}
+
+.tab .list .content .page a .inpage .text .textdate{
+    margin-bottom: 25px;
+}
+
+.tab .list .content .page a .inpage .text .textdate .label{
+    font-size: 15px;
+    margin: 0 20px;
+}
+
+
+
+
+.tab .list .content .page a .inpage .img{
+    align-self: flex-end;
+    margin: 0 auto;
+}
+
+
+.tab .list .content .page a .inpage .texttitle{
     font-size: 1.75em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+
+
+.tab .list .content .page:nth-child(3n){
+    margin-right: 0;
+}
+
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.tab .list .content .page .inpage .author{
+    margin-bottom: 15px;
+    font-size: 1.2em;
 }

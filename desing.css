@@ -90,27 +90,29 @@ body{
     display: flex;
     height: 500px;
     margin: 0 auto;
-    justify-content: space-around;
+    width: 1100px;
+    justify-content: space-between;
 }
 
 .tab .content .page{
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
-    margin:20px;
-    margin-right: 50px;
-    flex: 1;
+    justify-content: space-between;
     transition: 0.5s;
+    width: 300px;
+}
+
+.tab .content .page .text{
+    width: 300px;
 }
 
 .tab .content .page .img{
-    width: auto;
-    margin: 0 auto;
     align-self: flex-end;
+    margin: 0 auto;
 }
 
 .tab .content .page:hover{
-    opacity: 90%;
+    opacity: 80%;
     transition: 0.5s;
     color:teal;
 }

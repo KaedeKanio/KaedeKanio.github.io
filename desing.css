@@ -170,3 +170,7 @@ a{
 .tab .list .content .page .inpage .textcon{
     font-weight: 500;
 }
+
+.tab .list .content .page .inpage audio{
+    margin-bottom: 85px;
+}
